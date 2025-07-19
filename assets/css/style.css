@@ -195,6 +195,52 @@ a {
     margin-bottom: 20px;
 }
 
+/* Section 4 Contact */
+#contact {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+        url('/assets/images/12.jpg') center/cover no-repeat;
+    color: white;
+}
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(10px);
+}
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--border-radius);
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: var(--accent);
+    color: var(--dark);
+    font-weight: 600;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #ffca28;
+}
 /* Header */
 header {
     position: fixed;
