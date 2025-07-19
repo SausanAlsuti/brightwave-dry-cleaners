@@ -166,7 +166,34 @@ a {
 }
 
 /* Section 3 About us */
+#about {
+    background-color: white;
+}
 
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-img {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    height: 400px;
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray);
+    font-size: 5rem;
+}
+
+.about-text h2 {
+    color: var(--primary);
+    margin-bottom: 20px;
+}
 
 /* Header */
 header {
