@@ -121,7 +121,11 @@ a {
 }
 
 /* Section 2 services */
-.service-content {
+#services {
+    background-color: var(--light);
+}
+
+.service-content{
     padding: 25px;
 }
 
@@ -255,7 +259,7 @@ textarea.form-control {
 }
 
 .btn-submit:hover {
-    background-color: #ffca28;
+    background-color: #fbb155;
 }
 
 .contact-container {
@@ -297,11 +301,13 @@ header {
 .navbar {
     display: flex;
     justify-content: space-between;
+    /* flex-direction: row-reverse; */
     align-items: center;
     padding: 20px 0;
 }
 
 .logo {
+    order: 0;
     display: flex;
     align-items: center;
     font-size: 1.8rem;
@@ -352,9 +358,13 @@ header {
 }
 
 .menu-toggle {
+    order: 1;
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
+    background: none;
+    border: none;
+    /* position: relative; */
 }
 
 
@@ -367,6 +377,28 @@ header {
     font-size: 0.9rem;
 }
 
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    background-color: var(--accent);
+    color: var(--dark);
+    transform: translateY(-5px);
+}
 
 
 
