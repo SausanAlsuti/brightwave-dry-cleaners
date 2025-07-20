@@ -2,9 +2,13 @@
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const targetId = this.getAttribute('href');
+        const target = document.querySelector(targetId);
         if (target) {
-            target.scrollIntoView({
+            const header = document.querySelector('header');
+            const headerHeight = header.offsetHeight;
+                window.scrollTo({
+                top: target.offsetTop - headerHeight,
                 behavior: 'smooth'
             });
         }
