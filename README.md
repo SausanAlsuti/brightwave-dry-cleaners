@@ -30,7 +30,7 @@
 [(Back to top)](#table-of-contents)
 
 # Quickstart <a name="quickstartdemo"></a>
-View the deployed version: [https://github.com/SausanAlsuti/brightwave-dry-cleaners](https://sausanalsuti.github.io/brightwave-dry-cleaners/)
+View the deployed version: Live Demo [https://sausanalsuti.github.io/brightwave-dry-cleaners/]
 [(Back to top)](#table-of-contents)
 
 # Installation <a name="installation"></a>
