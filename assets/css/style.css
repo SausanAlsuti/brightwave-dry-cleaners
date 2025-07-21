@@ -1,4 +1,4 @@
-/* Reset and body style */
+/* Reset & variables */
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@
 :root {
     --primary: #2B3A55;    
     --secondary: #A8DADC;  
-    --accent: #F4A261;     
+    --accent: #F4A261;
     --light: #F1FAEE;      
     --dark: #1D3557;       
     --gray: #6c757d;       
@@ -17,6 +17,19 @@
     --border-radius: 8px;
 }
 
+/* Global Utilities */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Body Style */
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
@@ -89,8 +102,7 @@ a {
     border-radius: 2px;
 }
 
-/* section 1 hero */
-
+/*  HERO SECTION  */
 #home {
     height: 100vh;
     display: flex;
@@ -120,7 +132,7 @@ a {
     margin-right: auto;
 }
 
-/* Section 2 services */
+/*  SERVICES SECTION */
 #services {
     background-color: var(--light);
 }
@@ -185,7 +197,7 @@ a {
     transform: translateY(-3px);
 }
 
-/* Section 3 About us */
+/* ABOUT US SECTION */
 #about {
     background-color: white;
 }
@@ -215,7 +227,7 @@ a {
     margin-bottom: 20px;
 }
 
-/* Section 4 Contact */
+/* CONTACT SECTION */
 #contact {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
         url('/assets/images/12.jpg') center/cover no-repeat;
@@ -230,8 +242,8 @@ a {
 .form-control {
     width: 100%;
     padding: 12px 15px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: var(--border-radius);
     color: white;
     font-family: inherit;
@@ -242,6 +254,11 @@ a {
     outline: none;
     border-color: var(--accent);
     background: rgba(255, 255, 255, 0.15);
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: italic;
 }
 
 textarea.form-control {
@@ -285,6 +302,17 @@ textarea.form-control {
     margin-right: 15px;
     min-width: 30px;
 }
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
 /* Header */
 header {
     position: fixed;
@@ -301,7 +329,6 @@ header {
 .navbar {
     display: flex;
     justify-content: space-between;
-    /* flex-direction: row-reverse; */
     align-items: center;
     padding: 20px 0;
 }
@@ -336,9 +363,19 @@ header {
     font-weight: 500;
     padding: 5px 0;
     transition: var(--transition);
+    cursor: pointer;
 }
 
- .nav-links a::after {
+.nav-links a:active {
+    color: var(--accent);
+}
+
+.nav-links a.active::after {
+    width: 100%;
+    background-color: var(--accent);
+}
+
+.nav-links a::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -367,14 +404,24 @@ header {
     /* position: relative; */
 }
 
+.menu-toggle i {
+    transition: var(--transition);
+}
+
+.menu-toggle.active i {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+
 
 /* Footer */
- .copyright {
+.copyright {
     text-align: center;
     padding-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     opacity: 0.7;
     font-size: 0.9rem;
+    color: var(--dark);
 }
 
 .social-links {
@@ -403,7 +450,7 @@ header {
 
 
 /* Responsive (Grid/Flex) */
- @media (max-width: 992px) {
+@media (max-width: 992px) {
     .hero-content h1 {
         font-size: 2.8rem;
     }
@@ -417,7 +464,7 @@ header {
     }
 }
 
- @media (max-width: 768px) {
+@media (max-width: 768px) {
     .menu-toggle {
         display: block;
     }
@@ -446,9 +493,14 @@ header {
     .hero-content h1 {
         font-size: 2.5rem;
     }
+
+    .menu-toggle.active i {
+        transform: rotate(90deg);
+        transition: transform 0.3s ease;
+    }
 }
 
- @media (max-width: 576px) {
+@media (max-width: 576px) {
     .section {
         padding: 60px 0;
     }
@@ -463,5 +515,9 @@ header {
     
     .btn {
         padding: 10px 20px;
+    }
+    
+    .logo img {
+        width: 60px;
     }
 }
