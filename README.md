@@ -30,16 +30,16 @@
 [(Back to top)](#table-of-contents)
 
 # Quickstart <a name="quickstartdemo"></a>
-View the deployed version: https://github.com/SausanAlsuti/brightwave-dry-cleaners
+View the deployed version: Live Demo [https://sausanalsuti.github.io/brightwave-dry-cleaners/]
 [(Back to top)](#table-of-contents)
 
 # Installation <a name="installation"></a>
-clone the repository: git clone https://github.com/SausanAlsuti/brightwave-dry-cleaners.git
+clone the repository
+open 'index.html' in browser
 [(Back to top)](#table-of-contents)
 
 # Usage <a name="usage"></a>
-manually: Navigate to the project folder and open index.html in your browser
-in bash: cd brightwave-dry-cleaners / start index.html
+Navigate to the project folder and open index.html in a modern browser
 [(Back to top)](#table-of-contents)
 
 # Project Structure <a name="project-structure"></a>
