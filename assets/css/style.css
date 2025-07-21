@@ -108,7 +108,7 @@ a {
     display: flex;
     align-items: center;
     background: linear-gradient(rgba(0, 40, 85, 0.9), rgba(0, 40, 85, 0.9)), 
-                url('/assets/images/12.jpg') center/cover no-repeat;
+                url('assets/images/12.jpg') center/cover no-repeat;
     color: white;
     text-align: center;
  }
