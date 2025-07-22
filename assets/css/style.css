@@ -285,12 +285,6 @@ textarea.form-control {
     gap: 50px;
 }
 
-.contact-info {
-    background-color: #e0efeb;
-    padding: 20px;
-    border-radius: var(--border-radius);
-}
-
 .contact-info h3 {
     margin-bottom: 20px;
     color: var(--accent);
@@ -305,11 +299,6 @@ textarea.form-control {
 .contact-detail:focus {
     outline: none;
     background: rgba(255, 255, 255, 0.15);
-}
-
-.contact-detail p {
-    color: white;
-    background-color: var(--dark);
 }
 
 .contact-detail i {
