@@ -302,8 +302,14 @@ textarea.form-control {
     margin-bottom: 25px;
 }
 
+.contact-detail:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.15);
+}
+
 .contact-detail p {
-color: var(--gray);
+    color: white;
+    background-color: var(--dark);
 }
 
 .contact-detail i {
