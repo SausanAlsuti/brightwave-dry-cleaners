@@ -90,7 +90,6 @@ a {
     text-align: center;
     margin-bottom: 50px;
     position: relative;
-    color: var(--dark);
 }
 
 .section-title::after {
@@ -284,6 +283,12 @@ textarea.form-control {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 50px;
+}
+
+.contact-info {
+    background-color: #e0efeb;
+    padding: 20px;
+    border-radius: var(--border-radius);
 }
 
 .contact-info h3 {
