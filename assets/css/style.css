@@ -290,18 +290,17 @@ textarea.form-control {
     color: var(--accent);
 }
 
-.contact-detail {
+.contact-detail p {
     display: flex;
     align-items: flex-start;
     margin-bottom: 25px;
+    margin-right: 15px;
+    min-width: 30px;
+    color: var(--gray);
+    font-size: 1.5rem;
 }
 
-.contact-detail:focus {
-    outline: none;
-    background: rgba(255, 255, 255, 0.15);
-}
-
-.contact-detail i {
+.contact-detail  i {
     font-size: 1.5rem;
     color: var(--accent);
     margin-right: 15px;
