@@ -289,6 +289,11 @@ textarea.form-control {
     margin-bottom: 20px;
     color: var(--accent);
 }
+ .contact-detail {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
 
 .contact-detail p {
     margin-right: 15px;
