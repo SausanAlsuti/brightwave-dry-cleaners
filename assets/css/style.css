@@ -90,6 +90,7 @@ a {
     text-align: center;
     margin-bottom: 50px;
     position: relative;
+    color: var(--dark);
 }
 
 .section-title::after {
@@ -294,6 +295,10 @@ textarea.form-control {
     display: flex;
     align-items: flex-start;
     margin-bottom: 25px;
+}
+
+.contact-detail p {
+color: var(--dark);
 }
 
 .contact-detail i {
